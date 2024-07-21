@@ -1,0 +1,73 @@
+.footer {
+	width: 100%;
+	position: relative;
+
+	&_line {
+		position: absolute;
+		width: 100%;
+		bottom: 24rem;
+		left: 0;
+		width: 100%;
+		height: 1px;
+		background-color: $color-grey-light-3;
+		z-index: 1000;
+	}
+
+	&_wrapper {
+		padding: 3.2rem 0 1.6rem 0;
+		display: grid;
+		grid-template-columns: 1fr auto auto;
+		gap: 9rem;
+	}
+
+	&_nav {
+		display: flex;
+		align-items: top;
+		gap: 6.4rem;
+		font-size: 1.4rem;
+		line-height: 1.6;
+
+		&-cell {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+
+			a {			
+					&:hover {
+					color: #064ea0;
+					}
+			 }
+		}
+	}
+
+	&_buttons {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	&_social {
+		display: flex;
+		gap: 1.6rem;
+		align-self: start;
+
+		a {
+			&:hover svg path {
+					transition: all 0.5s ease;
+					fill: #064ea0;
+			}
+		}
+		
+	}
+
+	&_copywrite {
+		display: flex;
+		gap: 1.2rem;
+		font-size: 1.2rem;
+		line-height: 1.4;
+
+		p {
+			color: $color-grey-light-2;
+		}
+	}
+}

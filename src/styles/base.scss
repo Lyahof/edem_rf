@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;500;600;700&display=swap');
+
+$color-primary: #0B1524;// main font color
+$color-grey-light-1: #8F949A;// darker version of grey text color
+$color-grey-light-2: #b6b9bd;// lighter version of grey text color
+$color-grey-light-3: #ced0d3;// color for header and footer lines
+$color-red:#FF4E3D; // notifications counter color
+
+* {
+	margin: 0;
+	padding: 0;
+}
+ 
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	background-color: transparent;
+	transition: all 0.3s ease;	
+ 
+	&:hover,
+	&:focus,
+	&:active {
+	  text-decoration: none;
+	  color: inherit;
+	  outline: none;
+	}
+}
+
+button {
+	appearance: none;
+	background: none;
+	border: none;
+	box-shadow: none;
+	padding: 0;
+	margin: 0;
+	font: inherit;
+	color: inherit;
+	text-align: inherit;
+	line-height: inherit;
+	cursor: pointer;
+	
+	&:focus {
+	  outline: none;
+	}
+ 
+	&:active {
+	  outline: none;
+	}
+ 
+	&:disabled {
+	  cursor: not-allowed;
+	  pointer-events: none;
+	}
+}
+ 
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Roboto Flex', sans-serif;
+	font-weight: 400;
+	color: $color-primary;
+	line-height: 1;
+}
+
+.container {
+	max-width: 112.5rem;
+	margin: 0 auto;
+	background-color: #fff;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+ }
+
+ .main {
+	flex-grow: 1;
+ }
